@@ -1,0 +1,17 @@
+
+<!-- 
+<app-total-passanger-cheak-in [getTotalCheakInArr]=" gotArrayFromApp" [getObjFromParent] ="cheakobj" *ngFor="let cheakobj of gotArrayFromApp"></app-total-passanger-cheak-in> -->
+
+ <div class="row">
+    <div class="col-md-6">
+        <app-total-passanger-cheak-in [getTotalCheakInArr]=" gotArrayFromApp" ></app-total-passanger-cheak-in>
+    </div>
+    <div class="col-md-6">       
+        <app-pass-obj-card (sendObj)="onsendData($event)" [getObj]="obj" *ngFor="let obj of gotArrayFromApp"></app-pass-obj-card>
+    </div>
+   
+</div> 
+
+
+      
+
